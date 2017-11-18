@@ -13,6 +13,7 @@ set $menu dmenu_run
 set $mute amixer -q sset Master toggle
 set $mutemic amixer -q sset Capture toggle
 set $pass passmenu-smart
+set $potp passmenu-otp-smart
 set $scapf screencap -f
 set $scapr screencap -r
 set $term st
@@ -115,6 +116,9 @@ bindsym XF86AudioRaiseVolume exec $volu && $refresh
 
 ## other
 bindsym XF86Launch1 exec $pass
+bindsym Shift+XF86Launch1 exec $potp
+bindsym $mod+XF86Launch1 exec $pass --type
+bindsym $mod+Shift+XF86Launch1 exec $potp --type
 bindsym XF86ScreenSaver exec $lock
 bindsym Shift+XF86ScreenSaver exec $save
 bindsym $mod+Print exec $scapf

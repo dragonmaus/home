@@ -9,6 +9,8 @@ SUBDIR=	cdiff\
 	git-addignore\
 	lefix\
 	lock\
+	passmenu-otp\
+	passmenu-otp-smart\
 	passmenu-smart\
 	pathsort\
 	pinentry-smart\
