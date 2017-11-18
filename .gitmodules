@@ -13,9 +13,6 @@
 [submodule "src/ext/git/derpibooru"]
 	path = src/ext/git/derpibooru
 	url = git@github.com:derpibooru/derpibooru.git
-[submodule "src/ext/git/home-old"]
-	path = src/ext/git/home-old
-	url = git@github.com:dragonmaus/home-old.git
 [submodule "src/ext/git/libdjb"]
 	path = src/ext/git/libdjb
 	url = git@github.com:dragonmaus/libdjb.git
