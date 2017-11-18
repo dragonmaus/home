@@ -32,6 +32,7 @@ factorio-experimental
 feh
 firefox
 fortune-mod
+fswebcam
 gendesk
 geoip
 ghc
@@ -95,4 +96,5 @@ xautolock
 xdotool
 xorg-xinit
 xscreensaver
+zbar
 zip
