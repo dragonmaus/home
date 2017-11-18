@@ -26,6 +26,7 @@
 /bin/
 /crypt*
 /inc/
+/keybase/
 /obj/
 /sbin/
 /tmp/
