@@ -24,7 +24,7 @@
 /.wine/
 /[A-Z]*
 /bin/
-/crypt
+/crypt*
 /inc/
 /obj/
 /sbin/
