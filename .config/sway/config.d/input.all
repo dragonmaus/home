@@ -1,0 +1,3 @@
+input * {
+  natural_scroll enabled
+}

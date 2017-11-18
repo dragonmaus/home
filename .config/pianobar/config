@@ -1,0 +1,4 @@
+audio_quality = high
+autostart_station = 3627975909007187996
+password_command = env PINENTRY_USER_DATA=gui pass web/com.pandora | head -1
+user = swdragonmaus@gmail.com

@@ -1,0 +1,2 @@
+/irc.conf filter=git-crypt diff=git-crypt
+/relay.conf filter=git-crypt diff=git-crypt

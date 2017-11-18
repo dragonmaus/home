@@ -1,0 +1,210 @@
+#############
+# Variables #
+#############
+
+## logo key; use Mod1 for Alt
+set $mod Mod4
+
+## apps
+set $appmenu i3-dmenu-desktop
+set $lock xscreensaver-command -lock
+set $save xscreensaver-command -activate
+set $menu dmenu_run
+set $mute amixer -q sset Master toggle
+set $mutemic amixer -q sset Capture toggle
+set $pass passmenu-smart
+set $scapf screencap -f
+set $scapr screencap -r
+set $term st
+set $vold amixer -q sset Master 5%-
+set $volu amixer -q sset Master 5%+
+
+## vi-style direction keys
+set $left h
+set $down j
+set $up k
+set $right l
+
+## other
+set $refresh pkill -USR1 i3status
+
+#########
+# Fonts #
+#########
+
+font pango:Liberation Mono 9
+
+#####################
+# Keyboard Bindings #
+#####################
+
+## i3 control
+# exit
+bindsym $mod+Shift+e exit
+# kill focused window
+bindsym $mod+Shift+q kill
+# reload configuration file
+bindsym $mod+Shift+c reload
+# restart in-place
+bindsym $mod+Shift+r restart
+
+## commands
+# open menu
+bindsym $mod+d exec $menu
+# open terminal
+bindsym $mod+Return exec $term
+# open app menu
+bindsym $mod+Shift+d exec $appmenu
+
+## layouts
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+## focus
+bindsym $mod+$left focus left
+bindsym $mod+Left focus left
+bindsym $mod+$down focus down
+bindsym $mod+Down focus down
+bindsym $mod+$up focus up
+bindsym $mod+Up focus up
+bindsym $mod+$right focus right
+bindsym $mod+Right focus right
+
+## moving
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+## workspaces
+bindsym $mod+1 workspace 1:α
+bindsym $mod+2 workspace 2:β
+bindsym $mod+3 workspace 3:γ
+bindsym $mod+4 workspace 4:δ
+bindsym $mod+5 workspace 5:ε
+bindsym $mod+6 workspace 6:ζ
+bindsym $mod+7 workspace 7:η
+bindsym $mod+8 workspace 8:θ
+bindsym $mod+9 workspace 9:ι
+bindsym $mod+0 workspace 10:κ
+bindsym $mod+Shift+1 move container to workspace 1:α
+bindsym $mod+Shift+2 move container to workspace 2:β
+bindsym $mod+Shift+3 move container to workspace 3:γ
+bindsym $mod+Shift+4 move container to workspace 4:δ
+bindsym $mod+Shift+5 move container to workspace 5:ε
+bindsym $mod+Shift+6 move container to workspace 6:ζ
+bindsym $mod+Shift+7 move container to workspace 7:η
+bindsym $mod+Shift+8 move container to workspace 8:θ
+bindsym $mod+Shift+9 move container to workspace 9:ι
+bindsym $mod+Shift+0 move container to workspace 10:κ
+
+## container control
+bindsym $mod+u border toggle
+bindsym $mod+f fullscreen
+
+## media keys
+bindsym XF86AudioLowerVolume exec $vold && $refresh
+bindsym XF86AudioMicMute exec $mutemic
+bindsym XF86AudioMute exec $mute && $refresh
+bindsym XF86AudioRaiseVolume exec $volu && $refresh
+
+## other
+bindsym XF86Launch1 exec $pass
+bindsym XF86ScreenSaver exec $lock
+bindsym Shift+XF86ScreenSaver exec $save
+bindsym $mod+Print exec $scapf
+bindsym $mod+Shift+Print exec $scapr
+
+#########
+# Modes #
+#########
+
+mode "resize" {
+  bindsym $left resize shrink width 10 px or 10 ppt
+  bindsym $down resize grow height 10 px or 10 ppt
+  bindsym $up resize shrink height 10 px or 10 ppt
+  bindsym $right resize grow width 10 px or 10 ppt
+  bindsym Left resize shrink width 10 px or 10 ppt
+  bindsym Down resize grow height 10 px or 10 ppt
+  bindsym Up resize shrink height 10 px or 10 ppt
+  bindsym Right resize grow width 10 px or 10 ppt
+  bindsym Escape mode "default"
+  bindsym Return mode "default"
+}
+bindsym $mod+r mode "resize"
+
+#####################
+# Floating Modifier #
+#####################
+
+floating_modifier $mod
+
+###############
+# Layout Mode #
+###############
+
+workspace_layout tabbed
+
+#################
+# Border Hiding #
+#################
+
+hide_edge_borders smart
+
+###########################
+# Container Configuration #
+###########################
+
+for_window [class="^20kly$"] border none
+for_window [class="^Angband$"] border none
+for_window [class="^Dwarf_Fortress$"] border none
+for_window [class="^Freeciv-gtk3$"] border none
+for_window [class="^Minecraft"] border none
+for_window [class="^Minetest$"] border none
+for_window [class="^Naev$"] border none
+for_window [class="^bzflag$"] border none
+for_window [class="^endless-sky$"] border none
+for_window [class="^factorio$"] border none
+for_window [class="^freedroid$"] border none
+for_window [class="^net-sf-freecol-FreeCol$"] border none
+for_window [class="^pingus.bin$"] border none
+for_window [class="^pyrogenesis$"] border none
+for_window [class="^simutrans$"] border none
+for_window [class="^spring$"] border none
+for_window [class="^warzone2100$"] border none
+for_window [class="^wesnoth$"] border none
+for_window [class="^widelands$"] border none
+
+#########################
+# Workspace Assignments #
+#########################
+
+## browsers → beta
+assign [window_role="^browser$"] → 2:β
+
+## games → gamma
+assign [class="^Dwarf_Fortress$"] → 3:γ
+assign [class="^Minecraft"] → 3:γ
+
+####################
+# Startup Commands #
+####################
+
+##########
+# Colors #
+##########
+
+#######
+# Bar #
+#######
+
+bar {
+  position top
+  status_command i3status
+  strip_workspace_numbers yes
+}

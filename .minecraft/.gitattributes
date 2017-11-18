@@ -1,0 +1,2 @@
+/launcher_profiles.json filter=git-crypt diff=git-crypt
+/servers.dat filter=git-crypt diff=git-crypt

@@ -1,0 +1,2 @@
+exec autocutsel -fork
+exec autocutsel -fork -selection PRIMARY

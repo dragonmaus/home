@@ -1,0 +1,17 @@
+Freedroid Version = 1.0.2
+Draw_Framerate = 1
+Draw_Energy = 1
+Draw_Position = 0
+Draw_DeathCount = 0
+Droid_Talk = 1
+WantedTextVisibleTime = 3.000000
+Current_BG_Music_Volume = 0.300000
+Current_Sound_FX_Volume = 0.500000
+Current_Gamma_Correction = 1.000000
+Theme_Name = lanzz
+FullUserRect = 1
+UseFullscreen = 0
+TakeoverActivates = 1
+ShowDecals = 1
+AllMapVisible = 1
+Vid_ScaleFactor = 1.000000

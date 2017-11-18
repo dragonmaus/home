@@ -1,0 +1,34 @@
+[general]
+status_path = "~/.config/vdirsyncer/status/"
+
+[pair my_calendars]
+a = "my_calendars_local"
+b = "my_calendars_remote"
+collections = ["from a", "from b"]
+
+[storage my_calendars_local]
+type = "filesystem"
+path = "~/.calendars/"
+fileext = ".ics"
+
+[storage my_calendars_remote]
+type = "caldav"
+url = "https://posteo.de:8443/"
+username.fetch = ["command", "khuser"]
+password.fetch = ["command", "khpass"]
+
+[pair my_contacts]
+a = "my_contacts_local"
+b = "my_contacts_remote"
+collections = ["from a", "from b"]
+
+[storage my_contacts_local]
+type = "filesystem"
+path = "~/.contacts/"
+fileext = ".vcf"
+
+[storage my_contacts_remote]
+type = "carddav"
+url = "https://posteo.de:8843/"
+username.fetch = ["command", "khuser"]
+password.fetch = ["command", "khpass"]

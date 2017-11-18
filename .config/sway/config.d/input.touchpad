@@ -1,0 +1,4 @@
+input "2:7:SynPS/2_Synaptics_TouchPad" {
+  scroll_method two_finger
+  tap enabled
+}

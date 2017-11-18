@@ -1,0 +1,7 @@
+<unity_prefs version_major="1" version_minor="1">
+	<pref name="Screenmanager Is Fullscreen mode" type="int">1</pref>
+	<pref name="Screenmanager Resolution Height" type="int">900</pref>
+	<pref name="Screenmanager Resolution Width" type="int">1600</pref>
+	<pref name="UnityGraphicsQuality" type="int">2</pref>
+	<pref name="UnitySelectMonitor" type="int">-1</pref>
+</unity_prefs>

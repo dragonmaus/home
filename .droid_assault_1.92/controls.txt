@@ -1,0 +1,25 @@
+#Contoller configuration
+#Wed Jul 05 18:52:15 EDT 2017
+controller2.button.7=start
+controller2.button.6=back
+controller2.button.5=transfer
+controller2.button.4=firebutton
+controller2.axis.4=fireaxis
+controller2.axis.3=aimX
+controller2.axis.2=aimY
+controller2.axis.1=moveX
+controller2.axis.0=moveY
+controller2=AUTO
+controller1=AUTO
+controller2.pad.X=switch
+controller1.pad.X=switch
+controller1.axis.4=fireaxis
+controller1.button.7=start
+controller1.axis.3=aimX
+controller1.button.6=back
+controller1.button.5=transfer
+controller1.axis.2=aimY
+controller1.button.4=firebutton
+controller1.axis.1=moveX
+controller1.axis.0=moveY
+device0=Saitek Cyborg M.M.O.7 Gaming Mouse

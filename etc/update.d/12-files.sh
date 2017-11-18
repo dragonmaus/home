@@ -1,0 +1,1 @@
+pacaur -Fy

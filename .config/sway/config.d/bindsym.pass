@@ -1,0 +1,1 @@
+bindsym XF86Launch1 exec $pass

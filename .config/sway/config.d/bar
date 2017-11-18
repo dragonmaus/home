@@ -1,0 +1,10 @@
+# status bar -- read `mad 5 sway-bar` for more info
+bar {
+  status_command i3status
+  position top
+  colors {
+    statusline #ffffff
+    background #323232
+    inactive_workspace #32323200 #32323200 #5c5c5c
+  }
+}

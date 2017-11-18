@@ -1,0 +1,10 @@
+set $refreshbar pkill -USR1 i3status
+
+set $lock xautolock -locknow
+set $menu dmenu_run
+set $mute amixer -q sset Master toggle && $refreshbar
+set $mutemic amixer -q sset Capture toggle
+set $pass passmenu-smart
+set $term st
+set $vold amixer -q sset Master 1- && $refreshbar
+set $volu amixer -q sset Master 1+ && $refreshbar

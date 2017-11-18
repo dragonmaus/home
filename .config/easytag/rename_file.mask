@@ -1,0 +1,2 @@
+/home/dragon/Music/%z/%y - %b/%n - %t
+/home/dragon/Music/%z/%y - %t

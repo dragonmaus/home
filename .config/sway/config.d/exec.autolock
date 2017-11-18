@@ -1,0 +1,1 @@
+exec xautolock -detectsleep -locker "swaylock -i /home/dragon/Pictures/Wallpapers/.current" &

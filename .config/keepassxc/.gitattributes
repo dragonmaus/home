@@ -1,0 +1,2 @@
+/keepassxc.ini filter=git-crypt diff=git-crypt
+/passwords.key filter=git-crypt diff=git-crypt

@@ -1,0 +1,8 @@
+# reload config file
+bindsym $mod+Shift+c reload
+
+# exit sway
+bindsym $mod+Shift+e exit
+
+# kill focused window
+bindsym $mod+Shift+q kill

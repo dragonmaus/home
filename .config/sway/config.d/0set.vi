@@ -1,0 +1,5 @@
+# vi-style direction keys
+set $left h
+set $down j
+set $up k
+set $right l

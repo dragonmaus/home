@@ -1,0 +1,43 @@
+# /etc/shrc
+
+# Set shell-specific PS1 defaults
+case $TERM in
+*color*|*linux*) color=true ;;
+*) color=false ;;
+esac
+case $TERM in
+*) title=true ;;
+linux) title=false ;;
+esac
+if test x"$BASH_VERSION" != x; then
+	$title && PS1='\[\e]0;\w\a\]' || PS1=
+	if $color; then
+		PS1=$PS1'\[\e[32m\]\t\[\e[m\] [\[\e[33m\]\w\[\e[m\]] $PSC '
+	else
+		PS1=$PS1'\t [\w] $PSC '
+	fi
+elif test x"$ZSH_VERSION" != x; then
+	$title && PS1='%{\e]0;%~\a%}' || PS1=
+	if $color; then
+		PS1=$PS1'%2F%*%f [%3F%~%f] $PSC '
+	else
+		PS1=$PS1'%* [%~] $PSC '
+	fi
+elif test x"`uname`" != xFreeBSD; then # FreeBSD sh just prints PS1 unaltered
+	PS1='`date +%T` [$PWD] $PSC '
+fi
+unset color title
+
+# This looks nicer than #/$/%
+case `id -ru` in
+0) PSC=ω;;
+*) PSC=λ;;
+esac
+
+HISTFILE=$HOME/.history
+
+GPG_TTY=`tty`
+export GPG_TTY
+
+# Source ~/.logout at exit
+trap -- 'test -r $HOME/.logout && . $HOME/.logout' EXIT

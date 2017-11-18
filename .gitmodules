@@ -1,0 +1,36 @@
+[submodule ".factorio"]
+	path = .factorio
+	url = dragon@dragonma.us.to.:git/factorio
+[submodule ".local/share/endless-sky"]
+	path = .local/share/endless-sky
+	url = dragon@dragonma.us.to.:git/endless-sky
+[submodule ".minetest"]
+	path = .minetest
+	url = git@github.com:dragonmaus/minetest.git
+[submodule ".password-store"]
+	path = .password-store
+	url = dragon@dragonma.us.to.:git/password-store
+[submodule "src/ext/git/derpibooru"]
+	path = src/ext/git/derpibooru
+	url = git@github.com:derpibooru/derpibooru.git
+[submodule "src/ext/git/home-old"]
+	path = src/ext/git/home-old
+	url = git@github.com:dragonmaus/home-old.git
+[submodule "src/ext/git/libdjb"]
+	path = src/ext/git/libdjb
+	url = git@github.com:dragonmaus/libdjb.git
+[submodule "src/ext/git/ponyapi"]
+	path = src/ext/git/ponyapi
+	url = git@github.com:Xe/PonyAPI.git
+[submodule "src/ext/suckless/abduco"]
+	path = src/ext/suckless/abduco
+	url = git@github.com:martanne/abduco.git
+[submodule "src/ext/suckless/dmenu"]
+	path = src/ext/suckless/dmenu
+	url = git://git.suckless.org/dmenu
+[submodule "src/ext/suckless/dvtm"]
+	path = src/ext/suckless/dvtm
+	url = git@github.com:martanne/dvtm.git
+[submodule "src/ext/suckless/st"]
+	path = src/ext/suckless/st
+	url = git://git.suckless.org/st
