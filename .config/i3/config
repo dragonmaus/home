@@ -115,10 +115,10 @@ bindsym XF86AudioMute exec $mute && $refresh
 bindsym XF86AudioRaiseVolume exec $volu && $refresh
 
 ## other
-bindsym XF86Launch1 exec $pass
-bindsym Shift+XF86Launch1 exec $potp
-bindsym $mod+XF86Launch1 exec $pass --type
-bindsym $mod+Shift+XF86Launch1 exec $potp --type
+bindsym XF86Launch1 exec $pass --type
+bindsym Shift+XF86Launch1 exec $potp --type
+bindsym $mod+XF86Launch1 exec $pass
+bindsym $mod+Shift+XF86Launch1 exec $potp
 bindsym XF86ScreenSaver exec $lock
 bindsym Shift+XF86ScreenSaver exec $save
 bindsym $mod+Print exec $scapf
