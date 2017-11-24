@@ -14,6 +14,7 @@ SUBDIR=	cdiff\
 	passmenu-smart\
 	pathsort\
 	pinentry-smart\
+	pshar\
 	qr\
 	randomise-wallpaper\
 	ratio\
