@@ -61,7 +61,11 @@ minecraft
 minetest
 minetest-server
 netctl-dispatcher-chrony
+notpacman
+nottetris2
 openssh
+orderoftwilight
+orthorobot
 p7zip
 pacaur
 pass
@@ -90,6 +94,8 @@ steam-native-runtime
 subversion
 syncthing
 transmission-cli
+triptych-bin
+trosh
 unzip
 uptimed
 vdirsyncer
