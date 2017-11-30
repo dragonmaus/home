@@ -14,3 +14,4 @@ application/x-extension-xhtml=firefox.desktop
 application/x-extension-xht=firefox.desktop
 
 [Added Associations]
+application/pdf=firefox.desktop;
