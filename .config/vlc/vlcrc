@@ -398,6 +398,14 @@
 # Teletext language (string)
 #linsys-sdi-telx-lang=
 
+[cdda] # Audio CD input
+
+# CDDB Server (string)
+#cddb-server=freedb.videolan.org
+
+# CDDB port (integer)
+#cddb-port=80
+
 [xcb_screen] # Screen capture (with X11/XCB)
 
 # Frame rate (float)
