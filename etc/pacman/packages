@@ -22,7 +22,6 @@ cmatrix
 compton
 cronie
 cups-pdf
-dfhack-bin
 dialog
 dosbox
 dosfstools
@@ -61,6 +60,7 @@ minecraft
 minetest
 minetest-server
 netctl-dispatcher-chrony
+nmap
 notpacman
 nottetris2
 openssh
@@ -96,6 +96,7 @@ syncthing
 transmission-cli
 triptych-bin
 trosh
+unknown-horizons
 unzip
 uptimed
 vdirsyncer
