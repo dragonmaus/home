@@ -7,9 +7,6 @@
 [submodule ".minetest"]
 	path = .minetest
 	url = git@github.com:dragonmaus/minetest.git
-[submodule ".password-store"]
-	path = .password-store
-	url = dragon@dragonma.us.:git/password-store
 [submodule "src/ext/git/derpibooru"]
 	path = src/ext/git/derpibooru
 	url = git@github.com:derpibooru/derpibooru.git
