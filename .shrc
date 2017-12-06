@@ -18,16 +18,3 @@ HISTCONTROL=ignoreboth
 HISTFILESIZE=10000
 HISTSIZE=12000
 PSC=τ
-
-. /usr/share/chruby/chruby.sh
-
-chruby_auto() { 
-  local p=`env - PATH=$PATH pwd`
-  local v=
-  until test x"$p" = x; do
-    test -r "$p"/.ruby-version && v=`head -1 "$p"/.ruby-version` && break
-    p=${p%/*}
-  done
-  test x"$v" = x && chruby system || chruby ruby "$v"
-}
-PROMPT_COMMAND=chruby_auto

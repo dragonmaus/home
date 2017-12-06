@@ -14,4 +14,4 @@ xscreensaver &
 
 gzip "$HOME"/.config/i3/session-*.log
 
-exec i3 >"$HOME"/.config/i3/session-`date -u +%FT%T%:z`.log 2>&1
+exec i3 >"$HOME"/.config/i3/session-`date -u +%FT%TZ`.log 2>&1
