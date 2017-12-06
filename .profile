@@ -13,6 +13,8 @@ XKB_DEFAULT_MODEL=thinkpad
 XKB_DEFAULT_VARIANT=dvorak
 XKB_DEFAULT_OPTIONS=ctrl:swapcaps
 
+PASSWORD_STORE_SIGNING_KEY=`cat $HOME/.secret/signing.key`
+
 set +a
 
 case $LOGNAME in
