@@ -6,6 +6,7 @@
 /.*history
 /.[A-Z]*
 /.android/
+/.bibletime/
 /.cache/
 /.calendars/
 /.clipboard
