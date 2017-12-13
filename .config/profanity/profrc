@@ -1,0 +1,5 @@
+[connection]
+account=me
+
+[otr]
+policy=opportunistic
