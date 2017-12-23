@@ -14,6 +14,7 @@
 /.dwarffortress/
 /.esd_auth
 /.gem/
+/.gnome/
 /.gog/
 /.java/
 /.mozilla/
@@ -28,6 +29,7 @@
 /[A-Z]*
 /bin/
 /crypt*
+/eschalon_b1_saved_games/
 /inc/
 /keybase/
 /obj/
