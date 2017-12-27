@@ -23,6 +23,7 @@
 /.stack/
 /.steam*
 /.sword/
+/.terminfo
 /.vendetta/
 /.viminfo
 /.wine/
