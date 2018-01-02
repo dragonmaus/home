@@ -1,5 +1,10 @@
 (
   file=1600x1200.zip
+  path=$HOME/Downloads/$file
+  case `file -b --mime-type "$path"` in
+  application/zip) ;;
+  *) rm -f "$path" ;;
+  esac
   pass web/com.digitalblasphemy \
     | tr '\n' '\t' \
     | sort \
