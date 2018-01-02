@@ -11,6 +11,7 @@
 /.calendars/
 /.clipboard
 /.contacts/
+/.dbus/
 /.dwarffortress/
 /.esd_auth
 /.gem/
