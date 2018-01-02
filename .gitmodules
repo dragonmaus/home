@@ -13,6 +13,9 @@
 [submodule "src/ext/git/glowing-bear"]
 	path = src/ext/git/glowing-bear
 	url = https://github.com/glowing-bear/glowing-bear
+[submodule "src/ext/git/home-remote"]
+	path = src/ext/git/home-remote
+	url = ssh://git@gitlab.com/dragonmaus/home-remote.git
 [submodule "src/ext/git/libdjb"]
 	path = src/ext/git/libdjb
 	url = git@github.com:dragonmaus/libdjb.git
