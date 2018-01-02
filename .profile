@@ -1,3 +1,10 @@
+run_startx=no
+printf '%s (y/n): ' 'Run StartX?' 1>&2
+read -t 60
+case $REPLY in
+[Yy]*) run_startx=yes ;;
+esac
+
 set -a
 
 EDITOR=vi
@@ -17,10 +24,5 @@ PASSWORD_STORE_SIGNING_KEY=`cat $HOME/.secret/signing.key`
 
 set +a
 
-case $LOGNAME in
-*-)
-  set -a
-  eval `printenv | sed -n s/$LOGNAME/${LOGNAME%-}/gp`
-  exec startx
-  ;;
-esac
+test x$run_startx = xyes && exec startx
+unset run_startx
