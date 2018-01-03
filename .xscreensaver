@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.37 for dragon on Sat Oct 28 20:42:43 2017.
+# Written by xscreensaver-demo 5.38 for dragon on Wed Jan  3 10:20:20 2018.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:10:00
@@ -29,10 +29,10 @@ dpmsQuickOff:	False
 dpmsStandby:	2:00:00
 dpmsSuspend:	2:00:00
 dpmsOff:	4:00:00
-grabDesktopImages:  True
+grabDesktopImages:  False
 grabVideoFrames:    False
-chooseRandomImages: False
-imageDirectory:	
+chooseRandomImages: True
+imageDirectory:	/home/dragon/Pictures/Wallpapers
 
 mode:		random
 selected:	89
@@ -271,6 +271,7 @@ programs:								      \
 - GL: 				splodesic -root				    \n\
 - GL: 				unicrud -root				    \n\
 - GL: 				vigilance -root -count 20		    \n\
+- GL: 				esper -root				    \n\
 
 
 pointerPollTime:    0:00:05
