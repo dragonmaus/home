@@ -195,9 +195,6 @@ assign [window_role="^browser$"] → 2:β
 
 ## games → gamma
 assign [class="^Dwarf_Fortress$"] → 3:γ
-assign [class="^Minecraft"] → 3:γ
-assign [class="^Steam$"] → 3:γ
-assign [class="^steam$"] → 3:γ
 
 ####################
 # Startup Commands #
