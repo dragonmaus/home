@@ -171,6 +171,7 @@ for_window [class="^Freeciv-gtk3$"] border none
 for_window [class="^Minecraft"] border none
 for_window [class="^Minetest$"] border none
 for_window [class="^Naev$"] border none
+for_window [class="^Steam$"] border none
 for_window [class="^bzflag$"] border none
 for_window [class="^endless-sky$"] border none
 for_window [class="^factorio$"] border none
@@ -180,6 +181,7 @@ for_window [class="^pingus.bin$"] border none
 for_window [class="^pyrogenesis$"] border none
 for_window [class="^simutrans$"] border none
 for_window [class="^spring$"] border none
+for_window [class="^steam$"] border none
 for_window [class="^warzone2100$"] border none
 for_window [class="^wesnoth$"] border none
 for_window [class="^widelands$"] border none
@@ -195,6 +197,7 @@ assign [window_role="^browser$"] → 2:β
 assign [class="^Dwarf_Fortress$"] → 3:γ
 assign [class="^Minecraft"] → 3:γ
 assign [class="^Steam$"] → 3:γ
+assign [class="^steam$"] → 3:γ
 
 ####################
 # Startup Commands #
