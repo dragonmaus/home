@@ -1,6 +1,7 @@
 .include <own.mk>
 
-SUBDIR=	cdiff\
+SUBDIR=	address\
+	cdiff\
 	clojure\
 	dircp\
 	en%\
