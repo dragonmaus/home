@@ -1,7 +1,6 @@
 # Pull in global shell config
 test -r /etc/shrc && . /etc/shrc
 
-alias dvtm='abduco -A dvtm dvtm'
 alias hd='hexdump -C'
 alias lc='ls -C'
 alias ll='ls -l'
@@ -9,7 +8,6 @@ alias ls='ls -1AFN --color=auto'
 alias pacman='echo "Did you mean \"pacaur\"?"'
 alias pstree='pstree -Uachlnp'
 alias rm='rm -d'
-alias weechat='abduco -A weechat weechat'
 
 set -o physical
 set -o vi
