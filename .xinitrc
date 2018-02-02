@@ -1,4 +1,4 @@
-setxkbmap -model "$XKB_DEFAULT_MODEL" -layout "$XKB_DEFAULT_LAYOUT" -variant "$XKB_DEFAULT_VARIANT" -option "$XKB_DEFAULT_OPTIONS"
+setxkbmap -model "$XKB_DEFAULT_MODEL" -layout "$XKB_DEFAULT_LAYOUT" -variant "$XKB_DEFAULT_VARIANT" `for o in $XKB_DEFAULT_OPTIONS; do echo " -option $o"; done`
 
 set-wallpaper "$HOME"/Pictures/Wallpapers/.current
 
