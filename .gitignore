@@ -9,6 +9,7 @@
 /.bibletime/
 /.cache/
 /.calendars/
+/.cargo/
 /.clipboard
 /.contacts/
 /.dbus/
@@ -21,8 +22,10 @@
 /.java/
 /.macromedia/
 /.mozilla/
+/.multirust
 /.password-store/
 /.pki/
+/.rustup/
 /.stack/
 /.steam*
 /.sword/
