@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.38 for dragon on Wed Jan  3 10:20:20 2018.
+# Written by xscreensaver-demo 5.38 for dragon on Sun Feb 18 22:21:57 2018.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:10:00
@@ -95,8 +95,7 @@ programs:								      \
 -				xjack -root				    \n\
 -				xlyap -root				    \n\
 - GL: 				atlantis -root				    \n\
-				bsod -root -delay 120 -atari -bsd	      \
-				  -sparclinux				    \n\
+-				bsod -root				    \n\
 - GL: 				bubble3d -root				    \n\
 - GL: 				cage -root				    \n\
 -				crystal -root				    \n\
@@ -134,8 +133,7 @@ programs:								      \
 -				wander -root				    \n\
 -				webcollage -root			    \n\
 -				xflame -root				    \n\
-				xmatrix -root -small -no-knock-knock	      \
-				  -phone 3025164156 -density 40		    \n\
+-				xmatrix -root				    \n\
 - GL: 				gflux -root				    \n\
 -				nerverot -root				    \n\
 				xrayswarm -root				    \n\
@@ -162,7 +160,7 @@ programs:								      \
 - GL: 				endgame -root				    \n\
 -				euler2d -root				    \n\
 -				fluidballs -root			    \n\
-  GL: 				flurry -root				    \n\
+- GL: 				flurry -root				    \n\
 - GL: 				glblur -root				    \n\
 - GL: 				glsnake -root				    \n\
 -				halftone -root				    \n\
