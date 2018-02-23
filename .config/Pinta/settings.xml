@@ -1,5 +1,4 @@
 ﻿<settings>
-  <setting name="default-image-type" type="System.String">png</setting>
   <setting name="window-size-width" type="System.Int32">1600</setting>
   <setting name="window-size-height" type="System.Int32">862</setting>
   <setting name="ruler-metric" type="System.Int32">0</setting>
@@ -7,7 +6,9 @@
   <setting name="ruler-shown" type="System.Boolean">False</setting>
   <setting name="toolbar-shown" type="System.Boolean">True</setting>
   <setting name="pixel-grid-shown" type="System.Boolean">False</setting>
-  <setting name="last-dialog-directory" type="System.String">/home/dragon/Pictures/Screenshots</setting>
-  <setting name="new-image-width" type="System.Int32">715</setting>
-  <setting name="new-image-height" type="System.Int32">2000</setting>
+  <setting name="last-dialog-directory" type="System.String">/home/dragon/Pictures</setting>
+  <setting name="new-image-width" type="System.Int32">800</setting>
+  <setting name="new-image-height" type="System.Int32">600</setting>
+  <setting name="default-image-type" type="System.String">png</setting>
+  <setting name="new-image-bg" type="Pinta.NewImageDialog+BackgroundType">Transparent</setting>
 </settings>
