@@ -10,5 +10,4 @@
   <setting name="new-image-width" type="System.Int32">800</setting>
   <setting name="new-image-height" type="System.Int32">600</setting>
   <setting name="default-image-type" type="System.String">png</setting>
-  <setting name="new-image-bg" type="Pinta.NewImageDialog+BackgroundType">Transparent</setting>
 </settings>
