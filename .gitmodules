@@ -1,42 +1,36 @@
-[submodule ".factorio"]
-	path = .factorio
-	url = dragon@dragonma.us.:git/factorio
-[submodule ".local/share/endless-sky"]
-	path = .local/share/endless-sky
-	url = dragon@dragonma.us.:git/endless-sky
 [submodule ".minetest"]
 	path = .minetest
-	url = git@github.com:dragonmaus/minetest.git
+	url = ssh://git@github.com/dragonmaus/minetest.git
 [submodule "src/ext/git/derpibooru"]
 	path = src/ext/git/derpibooru
-	url = git@github.com:derpibooru/derpibooru.git
+	url = ssh://git@github.com/derpibooru/derpibooru.git
 [submodule "src/ext/git/glowing-bear"]
 	path = src/ext/git/glowing-bear
-	url = https://github.com/glowing-bear/glowing-bear
+	url = ssh://git@github.com/glowing-bear/glowing-bear.git
 [submodule "src/ext/git/home-remote"]
 	path = src/ext/git/home-remote
 	url = ssh://git@gitlab.com/dragonmaus/home-remote.git
 [submodule "src/ext/git/libdjb"]
 	path = src/ext/git/libdjb
-	url = git@github.com:dragonmaus/libdjb.git
+	url = ssh://git@github.com/dragonmaus/libdjb.git
 [submodule "src/ext/git/password-store"]
 	path = src/ext/git/password-store
 	url = https://git.zx2c4.com/password-store
 [submodule "src/ext/git/ponyapi"]
 	path = src/ext/git/ponyapi
-	url = git@github.com:Xe/PonyAPI.git
+	url = ssh://git@github.com/Xe/PonyAPI.git
 [submodule "src/ext/suckless/abduco"]
 	path = src/ext/suckless/abduco
-	url = git@github.com:martanne/abduco.git
+	url = ssh://git@github.com/martanne/abduco.git
 [submodule "src/ext/suckless/dmenu"]
 	path = src/ext/suckless/dmenu
-	url = git://git.suckless.org/dmenu
+	url = https://git.suckless.org/dmenu
 [submodule "src/ext/suckless/dvtm"]
 	path = src/ext/suckless/dvtm
-	url = git@github.com:martanne/dvtm.git
+	url = ssh://git@github.com/martanne/dvtm.git
 [submodule "src/ext/suckless/sic"]
 	path = src/ext/suckless/sic
 	url = https://git.suckless.org/sic
 [submodule "src/ext/suckless/st"]
 	path = src/ext/suckless/st
-	url = git://git.suckless.org/st
+	url = https://git.suckless.org/st
