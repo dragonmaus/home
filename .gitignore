@@ -27,6 +27,7 @@
 /.password-store/
 /.pki/
 /.rustup/
+/.serverauth.*
 /.stack/
 /.steam*
 /.sword/
