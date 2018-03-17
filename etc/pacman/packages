@@ -25,6 +25,7 @@ compton
 cronie
 cups-pdf
 dialog
+dir-dlagent
 discord
 dosfstools
 downgrader
@@ -59,6 +60,7 @@ khal
 khard
 ldraw-parts-library
 leocad
+lgogdownloader
 libreoffice-fresh
 linux-steam-integration
 minecraft

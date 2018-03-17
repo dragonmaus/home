@@ -8,6 +8,7 @@ SUBDIR=	address\
 	fsync\
 	git-addcrypt\
 	git-addignore\
+	gog-dlagent\
 	lefix\
 	lock\
 	passmenu-otp\

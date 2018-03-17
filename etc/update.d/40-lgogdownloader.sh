@@ -1,0 +1,1 @@
+lgogdownloader --update-check
