@@ -3,6 +3,7 @@
 SUBDIR=	address\
 	cdiff\
 	clojure\
+	derpivote\
 	dircp\
 	en%\
 	fsync\
