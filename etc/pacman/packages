@@ -83,6 +83,7 @@ pinta
 povray
 profanity
 pstoedit
+psutils
 pulseaudio-alsa
 python-defusedxml
 python-discid
@@ -95,6 +96,7 @@ ruby
 sane
 steam-native-runtime
 syncthing
+texlive-core
 transmission-cli
 triptych-bin
 trosh
