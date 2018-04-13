@@ -70,6 +70,7 @@ mpd
 netctl-dispatcher-chrony
 notpacman
 nottetris2
+opencv2
 openra
 openssh
 optipng
@@ -80,6 +81,7 @@ pacaur
 pass
 picard
 pinta
+postgresql-libs
 povray
 profanity
 pstoedit
