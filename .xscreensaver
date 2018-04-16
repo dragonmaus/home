@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.38 for dragon on Sun Feb 18 22:21:57 2018.
+# Written by xscreensaver-demo 5.39 for dragon on Sun Apr 15 20:02:50 2018.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:10:00
@@ -270,6 +270,10 @@ programs:								      \
 - GL: 				unicrud -root				    \n\
 - GL: 				vigilance -root -count 20		    \n\
 - GL: 				esper -root				    \n\
+- GL: 				crumbler -root				    \n\
+  GL: 				maze3d -root				    \n\
+- GL: 				peepers -root				    \n\
+- GL: 				razzledazzle -root			    \n\
 
 
 pointerPollTime:    0:00:05
