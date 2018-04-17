@@ -1,6 +1,9 @@
 [submodule ".minetest"]
 	path = .minetest
 	url = ssh://git@github.com/dragonmaus/minetest.git
+[submodule "src/ext/git/chatbot"]
+	path = src/ext/git/chatbot
+	url = ssh://git@github.com/derpibooru/chatbot.git
 [submodule "src/ext/git/derpibooru"]
 	path = src/ext/git/derpibooru
 	url = ssh://git@github.com/derpibooru/derpibooru.git
