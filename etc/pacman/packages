@@ -18,6 +18,7 @@ bmake
 brother-mfc-495cw
 brscan3
 btrfs-progs
+caffeine-ng
 calc
 chromium
 cmatrix
@@ -47,6 +48,7 @@ ghc
 git-annex
 git-crypt
 go
+gog-papers-please
 gog-tis-100
 gparted
 grub
@@ -71,6 +73,7 @@ mpd
 netctl-dispatcher-chrony
 notpacman
 nottetris2
+npm
 opencv2
 openra
 openssh
@@ -85,6 +88,7 @@ picard
 pinta
 postgresql-libs
 povray
+prettier
 profanity
 pstoedit
 psutils
