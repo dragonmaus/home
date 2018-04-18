@@ -73,7 +73,6 @@ mpd
 netctl-dispatcher-chrony
 notpacman
 nottetris2
-npm
 opencv2
 openra
 openssh
@@ -88,7 +87,6 @@ picard
 pinta
 postgresql-libs
 povray
-prettier
 profanity
 pstoedit
 psutils
@@ -120,5 +118,6 @@ wine
 xdotool
 xorg-xinit
 xscreensaver
+yarn
 zbar
 zip
