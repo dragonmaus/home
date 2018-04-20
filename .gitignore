@@ -25,6 +25,7 @@
 /.macromedia/
 /.mozilla/
 /.multirust
+/.node-gyp/
 /.password-store/
 /.pki/
 /.rustup/
@@ -47,3 +48,4 @@
 /sbin/
 /tmp/
 /xbin/
+node_modules/
