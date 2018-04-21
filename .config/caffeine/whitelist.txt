@@ -1,4 +1,3 @@
 epsxe
-pcxs2
-snes9x
-snes9x-gtk
+pcsx2
+zsnes
