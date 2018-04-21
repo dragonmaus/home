@@ -82,7 +82,7 @@ orthorobot
 p7zip
 pacaur
 pass
-pcsx2
+pcsx2-git
 picard
 pinta
 postgresql-libs
@@ -101,7 +101,6 @@ reflector
 ruby
 samba
 sane
-snes9x
 steam-native-runtime
 syncthing
 texlive-core
@@ -121,3 +120,4 @@ xscreensaver
 yarn
 zbar
 zip
+zsnes
