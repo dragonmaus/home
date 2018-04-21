@@ -7,7 +7,6 @@ alias ll='ls -l'
 alias ls='ls -1AFN --color=auto'
 alias pacman='echo "Did you mean \"pacaur\"?"'
 alias pstree='pstree -Uachlnp'
-alias rm='rm -d'
 
 set -o physical
 set -o vi
