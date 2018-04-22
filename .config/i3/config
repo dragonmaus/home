@@ -7,7 +7,7 @@ set $mod Mod4
 
 ## apps
 set $appmenu i3-dmenu-desktop
-set $lock xscreensaver-command -lock
+set $lock amixer -q sset Master mute && xscreensaver-command -lock
 set $save xscreensaver-command -activate
 set $menu dmenu_run
 set $mute amixer -q sset Master toggle
