@@ -20,6 +20,7 @@ brscan3
 btrfs-progs
 caffeine-ng
 calc
+cdparanoia
 chromium
 cmatrix
 compton
@@ -36,7 +37,6 @@ endless-sky
 epsxe
 epsxe-plugin-gpu-soft
 epsxe-plugin-padjoy
-evelauncher
 factorio-experimental
 feh
 firefox
@@ -73,14 +73,10 @@ minecraft
 minetest
 mpd
 netctl-dispatcher-chrony
-notpacman
-nottetris2
 opencv2
 openra
 openssh
 optipng
-orderoftwilight
-orthorobot
 p7zip
 pacaur
 pass
@@ -107,15 +103,12 @@ steam-native-runtime
 syncthing
 texlive-core
 transmission-cli
-triptych-bin
-trosh
 unknown-horizons
 unzip
 uptimed
 vbam-wx
 vdirsyncer
 vlc
-whipper
 wine
 xdotool
 xorg-xinit
