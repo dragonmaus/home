@@ -13,7 +13,7 @@ autocutsel
 bibletime
 bind-tools
 bluez
-bluez-utils
+bluez-utils-compat
 bmake
 brother-mfc-495cw
 brscan3
