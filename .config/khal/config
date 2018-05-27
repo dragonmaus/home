@@ -5,15 +5,17 @@ path = ~/.calendars/*
 type = discover
 
 [[my_contacts_local]]
-path = ~/.contacts/*
-type = discover
+color = light magenta
+path = ~/.contacts/default
+type = birthdays
 
 [default]
-default_calendar = default
+highlight_event_days = true
 
 [locale]
 timeformat = %H:%M
-dateformat = %Y-%m-%d
+dateformat = %m-%d
 longdateformat = %Y-%m-%d
-datetimeformat = %Y-%m-%d %H:%M
+datetimeformat = %m-%d %H:%M
 longdatetimeformat = %Y-%m-%d %H:%M
+firstweekday = 6

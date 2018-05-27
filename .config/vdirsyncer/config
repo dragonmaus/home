@@ -4,7 +4,7 @@ status_path = "~/.config/vdirsyncer/status/"
 [pair my_calendars]
 a = "my_calendars_local"
 b = "my_calendars_remote"
-collections = ["from a", "from b"]
+collections = ["default", ["holiday", "holiday", "nobddr"], ["church", "church", "gvddrj"]]
 
 [storage my_calendars_local]
 type = "filesystem"
