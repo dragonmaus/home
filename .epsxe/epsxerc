@@ -1,0 +1,101 @@
+#
+#  ePSXe config file 2.0.0
+#
+
+# Plugins names
+VideoPlugin = GPUCORE
+SoundPlugin = SPUCORE
+InputPlugin = INPUTCORE
+Input2Plugin = INPUTCORE
+
+# File paths/names
+BiosPath = /home/dragon/.epsxe/bios/SCPH1001.BIN
+CdromDevice = /dev/sr0
+IsoDirectory = /home/dragon/ROMs/ps1
+BiosHLE = 0
+
+# Memory cards [files]
+MemcardPath1 = /home/dragon/.epsxe/memcards/epsxe000.mcr
+MemcardPath2 = /home/dragon/.epsxe/memcards/epsxe001.mcr
+MemcardByGame = 1
+Memcard1Enable = 1
+Memcard2Enable = 1
+
+# Video options
+GPUfullRes = 58984000
+GPUResX = 1152
+GPUResY = 864
+GPUIRatio = 1
+GPUFilterHW = 1
+GPURemoveBands = 0
+GPUFullscreen = 0
+GPUVsync = 0
+GPUScanlines = 0
+GPUScanlinesBr = 96
+GPUScanlinesTh = 1
+GPU2DScaler = 0
+GPUOverscanTop = 2
+GPUOverscanBottom = 0
+GPURunMode = 0
+GPUFrameLimit = 1
+GPUFrameSkip = 0
+GPUCustomFPS = -1
+GPUShowFPS = 0
+GPUShader = 0
+GPUScreenRatio = 1
+GPUBright = 0
+GPUShaderDir = 
+
+# Sounds options
+SoundEnabled = 1
+SPULatency = 3
+SPUQuality = 2
+
+# Input options
+Keys1 = 262,263,260,261,256,257,258,259,264,266,267,265,386,385,387,384
+Keys2 = 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Keys3 = 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Keys4 = 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Multitap1 = 0
+Keys5 = 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Keys6 = 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Keys7 = 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Keys8 = 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Multitap2 = 0
+GamepadFullAxis = 0,1,2,3,192,192,192,192,192,192,192,192,192,192,192,192,192,192,192,192,192,192,192,192,192,192,192,192,192,192,192,192
+GamepadARange = 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+GamepadType = 4,1,1,1,1,1,1,1
+Joystick1 = Microntek              USB Joystick          
+Joystick2 = none
+Joystick3 = none
+Joystick4 = none
+Joystick5 = none
+Joystick6 = none
+Joystick7 = none
+Joystick8 = none
+PAD1AFButton1 = 0
+PAD1AFFreq1 = 0
+PAD1AFButton2 = 0
+PAD1AFFreq2 = 0
+PAD1AFButton3 = 0
+PAD1AFFreq3 = 0
+PAD1AFButton4 = 0
+PAD1AFFreq4 = 0
+PAD2AFButton1 = 0
+PAD2AFFreq1 = 0
+PAD2AFButton2 = 0
+PAD2AFFreq2 = 0
+PAD2AFButton3 = 0
+PAD2AFFreq3 = 0
+PAD2AFButton4 = 0
+PAD2AFFreq4 = 0
+
+# Game folders
+GameListFolder1 = /home/dragon/ROMs/ps1
+
+# Misc options
+AutoPpfLoad = 1
+CPUMode = 0
+GTESubpixel = 1
+GTEWidescreen = 4
+CPUOverclocking = 10
