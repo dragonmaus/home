@@ -8,9 +8,13 @@ WARNS=	6
 CFLAGS+=	-I${HOME}/inc
 LDFLAGS+=	-L${HOME}/lib
 
-.SUFFIXES: .calc .rb .py .sed
+.SUFFIXES: .calc .js .rb .py .sed
 
 .calc:
+	rm -f ${.TARGET}
+	cp ${.IMPSRC} ${.TARGET}
+
+.js:
 	rm -f ${.TARGET}
 	cp ${.IMPSRC} ${.TARGET}
 

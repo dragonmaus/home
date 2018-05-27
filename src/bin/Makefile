@@ -10,6 +10,7 @@ SUBDIR=	address\
 	git-addcrypt\
 	git-addignore\
 	gog-dlagent\
+	jsonsort\
 	lefix\
 	lock\
 	passmenu-otp\
