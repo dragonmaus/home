@@ -37,6 +37,7 @@
 /.vendetta/
 /.viminfo
 /.wine/
+/.yarn/
 /.yarnrc
 /[A-Z]*
 /bin/
