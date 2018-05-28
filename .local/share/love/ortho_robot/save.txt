@@ -1,1 +1,0 @@
-map=01.txt;time=0.8;steps=7;warps=0;coins=3,1,1:6,1,5;map=02.txt;time=4.94;steps=6;warps=1;map=03.txt;map=04.txt;map=05.txt;map=06.txt;map=07.txt;map=08.txt;map=09.txt;map=10.txt;map=11.txt;map=12.txt;map=13.txt;map=14.txt;map=15.txt;map=16.txt;scale=1;sound=true;

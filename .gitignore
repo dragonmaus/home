@@ -21,6 +21,7 @@
 /.gnome/
 /.gog/
 /.java/
+/.local/
 /.macromedia/
 /.mozilla/
 /.multirust
@@ -37,6 +38,7 @@
 /.vendetta/
 /.viminfo
 /.wine/
+/.wine32/
 /.yarn/
 /.yarnrc
 /[A-Z]*
