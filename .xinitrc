@@ -4,12 +4,12 @@ set-wallpaper "$HOME"/Pictures/Wallpapers/.current
 
 compton -b
 
-redshift-gtk &
-
 autocutsel -fork
 autocutsel -fork -selection PRIMARY
 autocutsel -fork -selection SECONDARY
-
+caffeine &
+env KEYBASE_START_UI=hideWindow run_keybase 1>/dev/null 2>&1 &
+redshift-gtk &
 xscreensaver &
 
 gzip "$HOME"/.config/i3/session-*.log
