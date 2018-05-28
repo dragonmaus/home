@@ -9,6 +9,7 @@ android-tools
 android-udev
 aquaria-data-hib
 aquaria-ose
+asp
 autocutsel
 bibletime
 bind-tools
@@ -68,6 +69,8 @@ ldraw-parts-library
 leocad
 lgogdownloader
 libreoffice-fresh
+linux-docs
+linux-headers
 linux-steam-integration
 minecraft
 minetest
