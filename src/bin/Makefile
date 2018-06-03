@@ -6,6 +6,7 @@ SUBDIR=	address\
 	derpivote\
 	dircp\
 	en%\
+	fix-screen\
 	fsync\
 	git-addcrypt\
 	git-addignore\
