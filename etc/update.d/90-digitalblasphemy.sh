@@ -3,7 +3,7 @@
   path=$HOME/Downloads/$file
   case `file -b --mime-type "$path"` in
   application/zip) ;;
-  *) rm -f "$path" ;;
+  *) touch -ch -r /etc/epoch "$path" ;;
   esac
   pass web/com.digitalblasphemy \
     | tr '\n' '\t' \
