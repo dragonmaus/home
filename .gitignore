@@ -26,6 +26,7 @@
 /.mozilla/
 /.multirust
 /.node-gyp/
+/.nv/
 /.password-store/
 /.pki/
 /.rustup/

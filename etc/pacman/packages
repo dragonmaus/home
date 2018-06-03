@@ -11,6 +11,7 @@ aquaria-data-hib
 aquaria-ose
 asp
 autocutsel
+bbswitch-dkms
 bibletime
 bind-tools
 bluez
@@ -68,14 +69,19 @@ khard
 ldraw-parts-library
 leocad
 lgogdownloader
+lib32-nvidia-390xx-utils
+lib32-virtualgl
 libreoffice-fresh
 linux-docs
 linux-headers
 linux-steam-integration
+mesa-demos
 minecraft
 minetest
 mpd
 netctl-dispatcher-chrony
+nvidia-390xx-dkms
+nvidia-390xx-utils
 opencv2
 openra
 openssh
@@ -89,6 +95,7 @@ picard
 pinta
 postgresql-libs
 povray
+primus
 profanity
 pstoedit
 psutils
