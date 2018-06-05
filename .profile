@@ -17,8 +17,8 @@ SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
 
 XKB_DEFAULT_LAYOUT=us
 XKB_DEFAULT_MODEL=thinkpad
+XKB_DEFAULT_OPTIONS=compose:paus
 XKB_DEFAULT_VARIANT=dvorak
-XKB_DEFAULT_OPTIONS='compose:paus ctrl:swapcaps'
 
 PASSWORD_STORE_SIGNING_KEY=`cat $HOME/.secret/signing.key`
 
