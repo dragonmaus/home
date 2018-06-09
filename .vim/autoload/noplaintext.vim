@@ -1,1 +1,0 @@
-/home/dragon/src/ext/git/password-store/contrib/vim/noplaintext.vim
