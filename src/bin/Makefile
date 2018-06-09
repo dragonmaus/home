@@ -10,6 +10,7 @@ SUBDIR=	address\
 	fsync\
 	git-addcrypt\
 	git-addignore\
+	git-new\
 	gog-dlagent\
 	jsonsort\
 	lefix\
