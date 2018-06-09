@@ -5,6 +5,17 @@ case $REPLY in
 [Yy]*) run_startx=yes ;;
 esac
 
+prepath=$prepath:$HOME/bin
+prepath=$prepath:$HOME/sbin
+prepath=$prepath:$HOME/xbin
+prepath=$prepath:$HOME/.local/bin
+prepath=${prepath#:}
+
+postpath=$postpath:$HOME/.cargo/bin
+postpath=$postpath:$HOME/.gem/ruby/2.5.0/bin
+postpath=$postpath:$HOME/.gem/ruby/2.4.0/bin
+postpath=${postpath#:}
+
 set -a
 
 EDITOR=vi
@@ -14,7 +25,7 @@ GPG_TTY=`tty`
 LESSHISTFILE=/dev/null
 MAKEOBJDIRPREFIX=$HOME/obj
 PASSWORD_STORE_SIGNING_KEY=`cat $HOME/.secret/signing.key`
-PATH=$HOME/.cargo/bin:$PATH:$HOME/bin:$HOME/sbin:$HOME/xbin:$GOPATH/bin:$HOME/.local/bin:$HOME/.gem/ruby/2.4.0/bin
+PATH=$prepath:$GOPATH/bin:$PATH:$postpath
 SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
 XKB_DEFAULT_LAYOUT=us
 XKB_DEFAULT_MODEL=pc105
@@ -24,4 +35,4 @@ XKB_DEFAULT_VARIANT=dvorak
 set +a
 
 test x$run_startx = xyes && exec startx
-unset run_startx
+unset postpath prepath run_startx
