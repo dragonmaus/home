@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# XXX: This will not work with files that contain linefeeds in their names.
+
+IFS='
+'
+export IFS
+
+gofiles=`git diff --cached --diff-filter=ACM --name-only "*.go"`
+test x"$gofiles" = x && exit 0
+
+unformatted=`gofmt -l $gofiles`
+test x"$unformatted" = x && exit 0
+
+echo "Go files must be formatted with gofmt. Please run:" 1>&2
+for file in $unformatted; do
+  echo "	gofmt -w \"$PWD/$file\"" 1>&2
+done
+
+exit 1
