@@ -1,3 +1,4 @@
+abduco
 acpi
 alephone-eternalx
 alephone-evil
@@ -32,9 +33,11 @@ desmume
 dialog
 dir-dlagent
 discord
+dmenu
 dolphin-emu
 dosfstools
 downgrader
+dvtm
 endless-sky
 epsxe
 epsxe-plugin-gpu-soft
@@ -110,6 +113,7 @@ reflector
 ruby
 samba
 sane
+st
 steam-native-runtime
 syncthing
 texlive-core
