@@ -31,9 +31,6 @@
 [submodule "src/ext/suckless/dvtm"]
 	path = src/ext/suckless/dvtm
 	url = ssh://git@github.com/martanne/dvtm.git
-[submodule "src/ext/suckless/sic"]
-	path = src/ext/suckless/sic
-	url = https://git.suckless.org/sic
 [submodule "src/ext/suckless/st"]
 	path = src/ext/suckless/st
 	url = https://git.suckless.org/st
