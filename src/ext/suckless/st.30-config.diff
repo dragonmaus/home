@@ -1,0 +1,49 @@
+diff --git a/config.def.h b/config.def.h
+index 13d41a0..183f819 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -83,7 +83,7 @@ char *termname = "st-256color";
+ unsigned int tabspaces = 8;
+ 
+ /* bg opacity */
+-unsigned int alpha = 0xcc;
++unsigned int alpha = 0xee;
+ 
+ /* Terminal colors (16 first used in escape sequence) */
+ static const char *colorname[] = {
+@@ -112,7 +112,6 @@ static const char *colorname[] = {
+ 	/* more colors can be added after 255 to use with DefaultXX */
+ 	"#cccccc",
+ 	"#555555",
+-	"black",
+ };
+ 
+ 
+@@ -121,7 +120,7 @@ static const char *colorname[] = {
+  * foreground, background, cursor, reverse cursor
+  */
+ unsigned int defaultfg = 7;
+-unsigned int defaultbg = 257;
++unsigned int defaultbg = 0;
+ static unsigned int defaultcs = 256;
+ static unsigned int defaultrcs = 257;
+ 
+diff --git a/config.mk b/config.mk
+index bbebd51..11b21ee 100644
+--- a/config.mk
++++ b/config.mk
+@@ -4,11 +4,11 @@ VERSION = 0.8.1
+ # Customize below to fit your system
+ 
+ # paths
+-PREFIX = /usr/local
++PREFIX = $(HOME)/.local
+ MANPREFIX = $(PREFIX)/share/man
+ 
+-X11INC = /usr/X11R6/include
+-X11LIB = /usr/X11R6/lib
++X11INC = /usr/include/X11
++X11LIB = /usr/lib/X11
+ 
+ # includes and libs
+ INCS = -I. -I/usr/include -I${X11INC} \

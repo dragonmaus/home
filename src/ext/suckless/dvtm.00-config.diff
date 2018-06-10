@@ -1,0 +1,12 @@
+diff --git a/config.mk b/config.mk
+index db25e8a..6ee7b8e 100644
+--- a/config.mk
++++ b/config.mk
+@@ -1,6 +1,6 @@
+ # Customize below to fit your system
+ 
+-PREFIX ?= /usr/local
++PREFIX ?= ${HOME}/.local
+ MANPREFIX = ${PREFIX}/share/man
+ # specify your systems terminfo directory
+ # leave empty to install into your home folder
