@@ -6,7 +6,7 @@
 	url = ssh://git@github.com/derpibooru/chatbot.git
 [submodule "src/ext/git/derpibooru"]
 	path = src/ext/git/derpibooru
-	url = ssh://git@github.com/derpibooru/derpibooru.git
+	url = ssh://git@gitlab.com/derpibooru/derpibooru.git
 [submodule "src/ext/git/glowing-bear"]
 	path = src/ext/git/glowing-bear
 	url = ssh://git@github.com/glowing-bear/glowing-bear.git
