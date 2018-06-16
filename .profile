@@ -10,16 +10,18 @@ prepath=$prepath:$HOME/sbin
 prepath=$prepath:$HOME/xbin
 prepath=$prepath:$HOME/.local/bin
 
-postpath=$postpath:$HOME/.cargo/bin
-postpath=$postpath:$HOME/.gem/ruby/2.5.0/bin
-postpath=$postpath:$HOME/.gem/ruby/2.4.0/bin
-
 for d in $HOME/src/go $HOME/src/ext/go; do
   # gopath => [external]:[personal]
   # path => [personal]:[external]
   gopath=$d:$gopath
   prepath=$prepath:$d/bin
 done
+
+prepath=$prepath:/usr/share/ghc-pristine/bin
+
+postpath=$postpath:$HOME/.cargo/bin
+postpath=$postpath:$HOME/.gem/ruby/2.5.0/bin
+postpath=$postpath:$HOME/.gem/ruby/2.4.0/bin
 
 gopath=${gopath%:}
 prepath=${prepath#:}

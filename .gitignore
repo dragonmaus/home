@@ -31,7 +31,6 @@
 /.pki/
 /.rustup/
 /.serverauth.*
-/.stack/
 /.steam*
 /.sword/
 /.terminfo
