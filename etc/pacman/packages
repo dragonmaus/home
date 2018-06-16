@@ -70,6 +70,7 @@ keybase-bin
 khal
 khard
 ldraw-parts-library
+leiningen
 leocad
 lgogdownloader
 lib32-nvidia-390xx-utils
@@ -110,6 +111,7 @@ qrencode
 redshift
 reflector
 ruby
+rustup
 samba
 sane
 st
@@ -131,6 +133,7 @@ xdotool
 xorg-xinit
 xscreensaver
 yarn
+youtube-dl
 zbar
 zip
 zsnes

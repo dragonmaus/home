@@ -1,1 +1,0 @@
-yes | lein upgrade
