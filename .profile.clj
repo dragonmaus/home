@@ -6,10 +6,13 @@
                   [core :refer :all]
                   [maths :as maths]])
 
-(let [fix #(str/replace
+(let [uri (str "https://docs.oracle.com/javase/"
+               (System/getProperty "java.specification.version")
+               "/")
+      fix #(str/replace
             %
             #"http://java\.sun\.com/javase/7/"
-            "https://docs.oracle.com/javase/8/")]
+            uri)]
   (intern 'clojure.java.javadoc
           '*core-java-api*
           (fix clojure.java.javadoc/*core-java-api*))
