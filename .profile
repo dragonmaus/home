@@ -19,7 +19,7 @@ postpath=${postpath#:}
 set -a
 
 EDITOR=vi
-GOPATH=`go env GOPATH`
+GOPATH=$HOME/src/go
 GOROOT=`go env GOROOT`
 GPG_TTY=`tty`
 LESSHISTFILE=/dev/null
