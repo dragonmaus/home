@@ -3,6 +3,7 @@
 SUBDIR=	address\
 	cdiff\
 	clojure\
+	clojure-repl\
 	derpivote\
 	dircp\
 	en%\
@@ -12,19 +13,13 @@ SUBDIR=	address\
 	git-addignore\
 	git-new\
 	gog-dlagent\
-	jsonsort\
 	lefix\
 	lock\
-	passmenu-otp\
-	passmenu-otp-smart\
 	passmenu-smart\
-	pathsort\
 	pinentry-smart\
-	pshar\
 	qr\
 	randomise-wallpaper\
 	ratio\
-	repl\
 	runjava\
 	screencap\
 	screensave\

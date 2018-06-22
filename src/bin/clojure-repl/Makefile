@@ -1,4 +1,4 @@
-SCRIPTS=	repl
+SCRIPTS=	clojure-repl
 NO_MAN=
 
 .include <prog.mk>
