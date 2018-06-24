@@ -1,5 +1,7 @@
 colorscheme elflord
 filetype plugin indent on
+let g:loaded_netrw=1
+let g:loaded_tar=1
 set autoindent
 set backspace=indent,eol,start
 set backupcopy=yes
