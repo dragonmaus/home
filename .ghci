@@ -1,0 +1,7 @@
+:set +m
+import Prelude hiding ( pi )
+:{
+let pi, tau :: Fractional α => α
+    pi = tau / 2
+    tau = 6.283185307179586476925286766559
+:}
