@@ -1,4 +1,4 @@
-# Revision history for my-util
+# Revision history for my
 
 ## 0.1.0.0  -- YYYY-mm-dd
 

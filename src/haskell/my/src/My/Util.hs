@@ -1,4 +1,4 @@
-module MyUtil where
+module My.Util where
 
 import Data.List
 
