@@ -12,13 +12,11 @@ git init
 
 rm -fv .git/hooks/*.sample
 
-realGOPATH=`cd "$GOPATH" && env - PATH=$PATH pwd`
 realPWD=`env - PATH=$PATH pwd`
+realGOPATH=`cd "$HOME"/src/go && env - PATH=$PATH pwd`
 
 case "$realPWD" in
   $realGOPATH/*)
     ln -fv "$realGOPATH"/misc/git/hooks/* .git/hooks/
     ;;
 esac
-
-exec git commit --allow-empty -m "Initial commit"
