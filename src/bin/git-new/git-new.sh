@@ -1,10 +1,5 @@
 #!/bin/sh
 
-if test -d "$1"; then
-  echo "\"$1\" already exists, aborting" 1>&2
-  exit 1
-fi
-
 mkdir -pv "$1"
 cd "$1"
 
