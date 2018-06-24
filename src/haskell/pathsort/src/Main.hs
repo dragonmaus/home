@@ -1,7 +1,7 @@
-module Main (main) where
+module Main ( main ) where
 
-import Data.List (sortBy)
-import MyUtil (splitBy)
+import Data.List ( sortBy )
+import My.List ( splitBy )
 
 -- impure code --
 main :: IO ()

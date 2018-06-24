@@ -1,8 +1,9 @@
-module Main (main) where
+module Main ( main ) where
 
-import Data.Char (isDigit, toLower)
-import Data.List (nub, sort, sortBy)
-import MyUtil (pad, prune, splitBy)
+import Data.Char ( isDigit, toLower )
+import Data.List ( nub, sort, sortBy )
+import My.List ( prune, splitBy )
+import My.String ( pad )
 import Network.URI
 
 -- impure code --
