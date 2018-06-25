@@ -1,4 +1,6 @@
 :set +m
+:set prompt "\ESC[32m\STX%t\ESC[m\STX [\ESC[33m\STX%w\ESC[m\STX]\n\ESC[36m\STX%s\ESC[m\STX> "
+:set prompt-cont "\ESC[36m\STX%s\ESC[m\STX| "
 
 import Prelude hiding ( pi )
 
