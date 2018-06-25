@@ -1,0 +1,3 @@
+editMode: Vi
+historyDuplicates: IgnoreAll
+maxHistorySize: Just 1000
