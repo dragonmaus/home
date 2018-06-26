@@ -1,7 +1,9 @@
 colorscheme elflord
 filetype plugin indent on
+let g:loaded_gzip=1
 let g:loaded_netrwPlugin=1
 let g:loaded_tarPlugin=1
+let g:loaded_zipPlugin=1
 set autoindent
 set backspace=indent,eol,start
 set backupcopy=yes
@@ -27,5 +29,3 @@ set undolevels=10000
 set viminfo='0,<0,f0,s0
 set nowrapscan
 syntax on
-
-runtime plugins.vim
