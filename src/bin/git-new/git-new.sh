@@ -8,10 +8,11 @@ git init
 rm -fv .git/hooks/*.sample
 
 realPWD=`env - PATH=$PATH pwd`
-realGOPATH=`cd "$HOME"/src/go && env - PATH=$PATH pwd`
-
 case "$realPWD" in
-  $realGOPATH/*)
-    ln -fv "$realGOPATH"/misc/git/hooks/* .git/hooks/
+  $HOME/src/go/*)
+    ln -fv $HOME/src/go/misc/git/hooks/* .git/hooks/
+    ;;
+  $HOME/src/haskell/*)
+    git addignore /dist/
     ;;
 esac
