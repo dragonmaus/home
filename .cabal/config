@@ -74,7 +74,7 @@ extra-prog-path: /home/dragon/.cabal/bin
 -- constraint:
 -- preference:
 -- solver: modular
--- documentation: False
+documentation: True
 -- doc-index-file: $datadir/doc/$arch-$os-$compiler/index.html
 -- max-backjumps: 2000
 -- reorder-goals: False
