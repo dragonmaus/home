@@ -1,39 +1,5 @@
 # /etc/shrc
 
-# Set shell-specific PS1 defaults
-case $TERM in
-*color*|*linux*) color=true ;;
-*) color=false ;;
-esac
-case $TERM in
-*) title=true ;;
-linux) title=false ;;
-esac
-if test x"$BASH_VERSION" != x; then
-	$title && PS1='\[\e]0;\w\a\]' || PS1=
-	if $color; then
-		PS1=$PS1'\[\e[32m\]\t\[\e[m\] [\[\e[33m\]\w\[\e[m\]] $PSC '
-	else
-		PS1=$PS1'\t [\w] $PSC '
-	fi
-elif test x"$ZSH_VERSION" != x; then
-	$title && PS1='%{\e]0;%~\a%}' || PS1=
-	if $color; then
-		PS1=$PS1'%2F%*%f [%3F%~%f] $PSC '
-	else
-		PS1=$PS1'%* [%~] $PSC '
-	fi
-elif test x"`uname`" != xFreeBSD; then # FreeBSD sh just prints PS1 unaltered
-	PS1='`date +%T` [$PWD] $PSC '
-fi
-unset color title
-
-# This looks nicer than #/$/%
-case `id -ru` in
-0) PSC=ω;;
-*) PSC=λ;;
-esac
-
 HISTFILE=$HOME/.history
 
 GPG_TTY=`tty`
@@ -41,3 +7,62 @@ export GPG_TTY
 
 # Source ~/.logout at exit
 trap -- 'test -r $HOME/.logout && . $HOME/.logout' EXIT
+
+## Set shell-specific PS1 defaults ##
+# This looks nicer than #/$/%
+case `id -ru` in
+  0) PS1=ω ;;
+  *) PS1=π ;;
+esac
+
+# *incoherent screaming*
+unset _cwd_ _green_ _l_ _n_ _r_ _reset_ _s_ _time_ _title_ _yellow_
+if test x"$BASH_VERSION" != x; then
+  _l_='\['
+  _r_='\]'
+  _green_=${_l_}'\e[32m'${_r_}
+  _yellow_=${_l_}'\e[33m'${_r_}
+  _reset_=${_l_}'\e[m'${_r_}
+  _n_='\n'
+  _s_=' '
+  _cwd_='\w'
+  _time_='\t'
+elif test x"$ZSH_VERSION" != x; then
+  _l_='%{'
+  _r_='%}'
+  _green_='%2F'
+  _yellow_='%3F'
+  _reset_='%f'
+  _n_='\n'
+  _s_=' '
+  _cwd_='%~'
+  _time_='%*'
+elif test x"`uname`" = xFreeBSD; then
+  # Of the elements we want in PS1, FreeBSD sh(1) only supports current working directory
+  _cwd_='\w'
+else
+  _n_='\n'
+  _s_=' '
+  _cwd_='$PWD'
+  _time_='`date +%T`'
+fi
+
+case $TERM in
+  *color*|*linux*)
+    ;;
+  *)
+    _green_=
+    _yellow_=
+    _reset_=
+    ;;
+esac
+
+if test x"${_l_}${_r_}" != x && test x"$TERM" != xlinux; then
+  _title_=${_l_}'\e]0;'${_cwd_}'\a'${_r_}
+fi
+
+_time_="${_green_}${_time_}${_reset_}"
+_cwd_="[${_yellow_}${_cwd_}${_reset_}]"
+
+PS1=${_title_}${_time_}${_s_}${_cwd_}${_n_}${PS1}' '
+unset _cwd_ _green_ _l_ _n_ _r_ _reset_ _s_ _time_ _title_ _yellow_

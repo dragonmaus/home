@@ -14,4 +14,4 @@ set -o vi
 HISTCONTROL=ignoreboth
 HISTFILESIZE=10000
 HISTSIZE=12000
-PSC=τ
+PS1=${PS1%? }'τ '
