@@ -117,7 +117,7 @@ haddock
   -- all:
   -- internal: False
   -- css:
-  -- hyperlink-source: False
+  hyperlink-source: True
   -- hscolour-css:
   -- contents-location:
 
