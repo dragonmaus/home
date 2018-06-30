@@ -13,6 +13,10 @@ case "$realPWD" in
     ln -fv $HOME/src/go/misc/git/hooks/* .git/hooks/
     ;;
   $HOME/src/haskell/*)
-    git addignore /dist/
+    git addignore '/dist/'
+    ;;
+  $HOME/src/rust/*)
+    git addignore '*.rs.bk'
+    git addignore '/target/'
     ;;
 esac
