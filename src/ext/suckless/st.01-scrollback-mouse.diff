@@ -43,7 +43,7 @@ index 628e876..cdd25ae 100644
  extern unsigned int defaultbg;
 +extern MouseKey mkeys[];
 diff --git a/x.c b/x.c
-index c0bd890..f949144 100644
+index 00cb6b1..8a39dd6 100644
 --- a/x.c
 +++ b/x.c
 @@ -409,6 +409,7 @@ bpress(XEvent *e)
