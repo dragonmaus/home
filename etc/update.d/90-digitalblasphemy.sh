@@ -1,18 +1,20 @@
 (
-  file=1600x1200.zip
-  path=$HOME/Downloads/$file
-  case `file -b --mime-type "$path"` in
-  application/zip) ;;
-  *) touch -ch -r /etc/epoch "$path" ;;
-  esac
-  pass web/com.digitalblasphemy \
-    | tr '\n' '\t' \
-    | sort \
-    | sed 's/^\(.*\)\t\(.*\)\thttp:\/\/\(.*\)\/\t$/machine secure.\3 login \2 password \1/' \
+  base=https://secure.digitalblasphemy.com/content/zips
+  path=$HOME/Downloads
+  for res in 1600x900 1600x1200 1920x1080 3840x1080; do
+    file=$path/$res.zip
+    url=$base/$res.zip
+    case `file -b --mime-type "$file"` in
+      application/zip) ;;
+      *) touch -r /etc/epoch "$file" ;;
+    esac
+    echo curl "$url" '=>' "$file" 1>&2
+    pass2netrc web/com.digitalblasphemy \
     | curl \
       --netrc-file /dev/fd/0 \
-      --output "$HOME"/Downloads/"$file" \
+      --output "$file" \
       --remote-time \
-      --time-cond "$HOME"/Downloads/"$file" \
-      --url https://secure.digitalblasphemy.com/content/zips/"$file"
+      --time-cond "$file" \
+      --url "$url"
+  done
 )
