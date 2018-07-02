@@ -9,12 +9,15 @@ SUBDIR=	address\
 	en%\
 	fix-screen\
 	fsync\
+	getpass\
+	getuser\
 	git-addcrypt\
 	git-addignore\
 	git-new\
 	gog-dlagent\
 	lefix\
 	lock\
+	pass2netrc\
 	passmenu-smart\
 	pinentry-smart\
 	qr\
