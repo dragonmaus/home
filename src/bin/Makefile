@@ -11,8 +11,7 @@ SUBDIR=	address\
 	fsync\
 	getpass\
 	getuser\
-	git-addcrypt\
-	git-addignore\
+	git-ignore\
 	git-new\
 	gog-dlagent\
 	lefix\

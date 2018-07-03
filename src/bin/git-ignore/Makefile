@@ -1,4 +1,4 @@
-SCRIPTS=	git-addignore
+SCRIPTS=	git-ignore
 NO_MAN=
 
 .include <prog.mk>

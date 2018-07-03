@@ -10,7 +10,7 @@ file=.gitignore
 
 test -f $file || touch $file
 rm -f $file{tmp}
-for f do echo "$f"; done | cat - $file | sort -u >$file{tmp}
+for f do echo "$f"; done | cat - $file | pathsort -u >$file{tmp}
 rm -f $file{new}
 (grep -v '^!' <$file{tmp} || :; grep '^!' <$file{tmp} || :) >$file{new}
 rm -f $file{tmp}
