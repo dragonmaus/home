@@ -1,17 +1,28 @@
 #!/bin/sh
 
+set -e
+
 cd "$HOME"
 
-rm -fr "$HOME/.cabal"
-rm -fr "$HOME/.ghc"
+cabal=$HOME/.cabal
+ghc=$HOME/.ghc
+hackage=$HOME/.hackage
 
-git diff -R --binary -- "$HOME/.cabal" "$HOME/.ghc" | git apply
+rm -fr $cabal $ghc $hackage
+git diff -R --binary -- $cabal $ghc $hackage | git apply
+
+src=$HOME/src/haskell
+
+mkdir -pv $hackage/repo/package
+ln -v $src/*/dist/*.tar.gz $hackage/repo/package
+
+hackage-repo-tool create-keys --keys $hackage/keys
+hackage-repo-tool bootstrap --keys $hackage/keys --repo $hackage/repo
+hackage-repo-tool update --keys $hackage/keys --repo $hackage/repo
+
+mkdir -pv $cabal/packages/local
 
 cabal update
 
-for p in `cat "$HOME/.cabal.world"`; do
-  test -d "$p" && (cd "$p" && exec cabal clean)
-done
-
 cabal install hscolour # must be installed first
-cabal install `cat "$HOME/.cabal.world"`
+cabal install `cat $cabal.world`
