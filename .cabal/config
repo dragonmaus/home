@@ -19,6 +19,10 @@ repository hackage.haskell.org
   -- root-keys:
   -- key-threshold: 3
 
+repository local
+  url: file:/home/dragon/.hackage/repo
+  secure: True
+
 -- default-user-config:
 -- require-sandbox: False
 -- ignore-sandbox: False
