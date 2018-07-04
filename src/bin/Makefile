@@ -1,6 +1,7 @@
 .include <own.mk>
 
 SUBDIR=	address\
+	cabal-system-reset\
 	cdiff\
 	clojure\
 	clojure-repl\
