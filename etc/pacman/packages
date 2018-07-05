@@ -39,7 +39,6 @@ dosfstools
 downgrader
 dvtm
 endless-sky
-epsxe
 epsxe-plugin-gpu-soft
 epsxe-plugin-padjoy
 factorio-experimental
@@ -50,7 +49,6 @@ foldingathome
 fortune-mod
 fswebcam
 gendesk
-geoip
 ghc-pristine
 ghc-static
 git-crypt
@@ -73,7 +71,6 @@ ldraw-parts-library
 leiningen
 leocad
 lgogdownloader
-lib32-nvidia-390xx-utils
 lib32-virtualgl
 libreoffice-fresh
 linux-docs
@@ -84,7 +81,6 @@ minetest
 mpd
 netctl-dispatcher-chrony
 nvidia-390xx-dkms
-nvidia-390xx-utils
 opencv2
 openra
 openssh
@@ -103,17 +99,11 @@ profanity
 pstoedit
 psutils
 pulseaudio-alsa
-python-defusedxml
-python-discid
-python-geocoder
-python-gobject
 qrencode
 redshift
 reflector
-ruby
 rustup
 samba
-sane
 st
 stack-bin
 steam-native-runtime
@@ -121,13 +111,11 @@ syncthing
 texlive-core
 transmission-cli
 unknown-horizons
-unzip
 uptimed
 vbam-wx
 vdirsyncer
 virtualbox
 vlc
-wine
 winetricks
 xdotool
 xorg-xinit
@@ -135,5 +123,4 @@ xscreensaver
 yarn
 youtube-dl
 zbar
-zip
 zsnes
