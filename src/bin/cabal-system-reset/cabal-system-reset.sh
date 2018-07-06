@@ -24,5 +24,11 @@ mkdir -pv $cabal/packages/local
 
 cabal update
 
+for package in `cat $cabal.world`; do
+  case $package in /*) ;; *) continue ;; esac
+  test -d $package || continue
+  (cd $package && exec cabal clean)
+done
+
 cabal install hscolour # must be installed first
 cabal install `cat $cabal.world`
