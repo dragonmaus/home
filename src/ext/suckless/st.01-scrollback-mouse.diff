@@ -1,8 +1,8 @@
 diff --git a/config.def.h b/config.def.h
-index 27d42ca..feec7e2 100644
+index 87e2edf..469b1d2 100644
 --- a/config.def.h
 +++ b/config.def.h
-@@ -156,8 +156,14 @@ static unsigned int defaultattr = 11;
+@@ -154,8 +154,14 @@ static unsigned int defaultattr = 11;
   */
  static MouseShortcut mshortcuts[] = {
  	/* button               mask            string */
@@ -43,7 +43,7 @@ index 628e876..cdd25ae 100644
  extern unsigned int defaultbg;
 +extern MouseKey mkeys[];
 diff --git a/x.c b/x.c
-index 00cb6b1..8a39dd6 100644
+index b51821d..79da1ec 100644
 --- a/x.c
 +++ b/x.c
 @@ -409,6 +409,7 @@ bpress(XEvent *e)

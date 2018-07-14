@@ -1,5 +1,5 @@
 diff --git a/config.def.h b/config.def.h
-index b04d224..1d283ca 100644
+index a836329..453cc1a 100644
 --- a/config.def.h
 +++ b/config.def.h
 @@ -83,7 +83,7 @@ char *termname = "st-256color";
@@ -25,9 +25,9 @@ index b04d224..1d283ca 100644
  unsigned int defaultfg = 7;
 -unsigned int defaultbg = 257;
 +unsigned int defaultbg = 0;
- static unsigned int defaultcs = 256;
- static unsigned int defaultrcs = 257;
  
+ /*
+  * Default shape of cursor
 diff --git a/config.mk b/config.mk
 index bbebd51..11b21ee 100644
 --- a/config.mk
