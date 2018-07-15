@@ -58,7 +58,7 @@ index cdd25ae..bb6dad4 100644
  	ATTR_NULL       = 0,
  	ATTR_BOLD       = 1 << 0,
 diff --git a/x.c b/x.c
-index 79da1ec..0826c05 100644
+index aa4bfe0..f4c46eb 100644
 --- a/x.c
 +++ b/x.c
 @@ -417,13 +417,14 @@ bpress(XEvent *e)

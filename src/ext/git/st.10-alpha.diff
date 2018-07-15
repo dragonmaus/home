@@ -59,7 +59,7 @@ index bb6dad4..f708001 100644
  extern unsigned int defaultbg;
  extern MouseKey mkeys[];
 diff --git a/x.c b/x.c
-index 0826c05..6b24500 100644
+index f4c46eb..8c80329 100644
 --- a/x.c
 +++ b/x.c
 @@ -48,6 +48,10 @@ typedef struct {
