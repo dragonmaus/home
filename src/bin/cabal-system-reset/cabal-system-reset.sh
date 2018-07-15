@@ -9,7 +9,7 @@ ghc=$HOME/.ghc
 hackage=$HOME/.hackage
 
 rm -fr $cabal $ghc
-rm -f $hackage/repo/*
+rm -f $hackage/repo/* 2>/dev/null || :
 rm -fr $hackage/repo/index
 git diff -R --binary -- $cabal $ghc $hackage | git apply
 
