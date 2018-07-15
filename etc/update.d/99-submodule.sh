@@ -1,1 +1,1 @@
-git submodule foreach --recursive git pull
+sh src/ext/update.sh
