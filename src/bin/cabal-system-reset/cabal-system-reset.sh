@@ -13,7 +13,7 @@ rm -f $hackage/repo/* 2>/dev/null || :
 rm -fr $hackage/repo/index
 git diff -R --binary -- $cabal $ghc $hackage | git apply
 
-src=$HOME/src/haskell/src
+src=$HOME/lang/haskell/src
 
 mkdir -pv $hackage/repo/package
 ln -fv $src/*/dist/*.tar.gz $hackage/repo/package

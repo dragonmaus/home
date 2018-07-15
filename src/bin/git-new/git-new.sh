@@ -8,15 +8,15 @@ git init
 rm -fv .git/hooks/*.sample
 
 realPWD=`env - PATH=$PATH pwd`
-case "$realPWD" in
-  $HOME/src/go/*)
-    ln -fv $HOME/src/go/misc/git/hooks/* .git/hooks/
+case "$realPWD/" in
+  $HOME/lang/go/*)
+    ln -fv $HOME/lang/go/misc/git/hooks/* .git/hooks/
     ;;
-  $HOME/src/haskell/*)
+  $HOME/lang/haskell/*)
     git ignore '/dist/'
     git ignore '/dist-newstyle/'
     ;;
-  $HOME/src/rust/*)
+  $HOME/lang/rust/*)
     git ignore '/target/'
     git ignore '*.rs.bk'
     ;;

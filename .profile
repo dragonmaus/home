@@ -11,7 +11,7 @@ prepath=$prepath:$HOME/xbin
 prepath=$prepath:$HOME/.local/bin
 prepath=$prepath:$HOME/.cabal/bin
 
-for d in $HOME/src/go $HOME/src/ext/go; do
+for d in $HOME/lang/go $HOME/lang/go.ext; do
   # gopath => [external]:[personal]
   # path => [personal]:[external]
   gopath=$d:$gopath
