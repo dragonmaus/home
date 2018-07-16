@@ -12,6 +12,7 @@
 /.esd_auth
 /.eve/
 /.factorio/
+/.fonts/
 /.gem/
 /.ghc/
 /.gnome/
@@ -29,6 +30,7 @@
 /.rustup/
 /.serverauth.*
 /.steam*
+/.subversion/
 /.sword/
 /.terminfo
 /.unknown-horizons/
