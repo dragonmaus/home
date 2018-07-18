@@ -8,6 +8,7 @@
 	program = gpg2
 [push]
 	default = simple
+	followTags = true
 [user]
 	email = dragonmaus@posteo.net
 	name = David Wildasin
