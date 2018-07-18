@@ -1,8 +1,8 @@
 diff --git a/config.def.h b/config.def.h
-index 469b1d2..2973e83 100644
+index feec7e2..f1a9768 100644
 --- a/config.def.h
 +++ b/config.def.h
-@@ -160,8 +160,8 @@ static MouseShortcut mshortcuts[] = {
+@@ -162,8 +162,8 @@ static MouseShortcut mshortcuts[] = {
  
  MouseKey mkeys[] = {
  	/* button               mask            function        argument */
@@ -58,7 +58,7 @@ index cdd25ae..bb6dad4 100644
  	ATTR_NULL       = 0,
  	ATTR_BOLD       = 1 << 0,
 diff --git a/x.c b/x.c
-index aa4bfe0..f4c46eb 100644
+index 8a39dd6..065f816 100644
 --- a/x.c
 +++ b/x.c
 @@ -417,13 +417,14 @@ bpress(XEvent *e)

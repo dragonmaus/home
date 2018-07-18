@@ -1,5 +1,5 @@
 diff --git a/config.def.h b/config.def.h
-index 2973e83..a836329 100644
+index f1a9768..b04d224 100644
 --- a/config.def.h
 +++ b/config.def.h
 @@ -82,6 +82,9 @@ char *termname = "st-256color";
@@ -26,9 +26,9 @@ index 2973e83..a836329 100644
  unsigned int defaultfg = 7;
 -unsigned int defaultbg = 0;
 +unsigned int defaultbg = 257;
+ static unsigned int defaultcs = 256;
+ static unsigned int defaultrcs = 257;
  
- /*
-  * Default shape of cursor
 diff --git a/config.mk b/config.mk
 index e676105..bbebd51 100644
 --- a/config.mk
@@ -59,7 +59,7 @@ index bb6dad4..f708001 100644
  extern unsigned int defaultbg;
  extern MouseKey mkeys[];
 diff --git a/x.c b/x.c
-index f4c46eb..8c80329 100644
+index 065f816..1e09ce0 100644
 --- a/x.c
 +++ b/x.c
 @@ -48,6 +48,10 @@ typedef struct {

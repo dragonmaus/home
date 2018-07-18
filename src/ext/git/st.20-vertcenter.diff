@@ -1,5 +1,5 @@
 diff --git a/x.c b/x.c
-index 8c80329..d33e710 100644
+index 1e09ce0..e4c960c 100644
 --- a/x.c
 +++ b/x.c
 @@ -84,6 +84,7 @@ typedef struct {
