@@ -1,3 +1,9 @@
+[alias]
+	exec = "!exec "
+	pwd = rev-parse --show-prefix
+	root = rev-parse --show-toplevel
+	skip = update-index --skip-worktree --
+	unskip = update-index --no-skip-worktree --
 [color]
 	ui = auto
 [commit]
