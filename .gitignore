@@ -41,6 +41,7 @@
 /.yarn/
 /.yarnrc
 /[A-Z]*
+/_*
 /bin/
 /crypt*
 /eschalon_b1_saved_games/
