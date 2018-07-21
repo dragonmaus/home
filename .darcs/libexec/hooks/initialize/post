@@ -17,15 +17,18 @@ done
 realPWD=`env - PATH=$PATH pwd`
 case "$realPWD/" in
   $HOME/lang/clojure/*)
-    echo '(^|/).lein-' >>_boring
-    echo '(^|/).nrepl-' >>_boring
-    echo '(^|/)target($|/)' >>_boring
+    echo '^\.lein-' >>_boring
+    echo '^\.nrepl-' >>_boring
+    echo '^target$' >>_boring
     ;;
   $HOME/lang/haskell/*)
-    echo '(^|/)dist($|/)' >>_boring
+    echo '^\.cabal-sandbox$' >>_boring
+    echo '^cabal\.sandbox\.config$' >>_boring
+    echo '^dist$' >>_boring
+    echo '^dist-newstyle$' >>_boring
     ;;
   $HOME/lang/rust/*)
-    echo '(^|/)target($|/)' >>_boring
+    echo '^target$' >>_boring
     ;;
 esac
 
