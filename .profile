@@ -30,6 +30,7 @@ postpath=${postpath#:}
 
 set -a
 
+DARCS_DO_COLOR_LINES=1
 EDITOR=vi
 GOPATH=$gopath
 GOROOT=`go env GOROOT`

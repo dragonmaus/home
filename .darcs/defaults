@@ -1,0 +1,4 @@
+initialize posthook ~/.darcs/libexec/hooks/initialize/post
+initialize prehook ~/.darcs/libexec/hooks/initialize/pre
+initialize run-posthook
+initialize run-prehook

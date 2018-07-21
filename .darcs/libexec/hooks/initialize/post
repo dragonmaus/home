@@ -1,0 +1,35 @@
+#!/bin/sh
+
+if test -d _darcs && ! test _darcs -ot ~/.darcs/tmp/initialize.timestamp; then
+  : # we're (probably) okay
+else
+  echo Not inside new repository 1>&2
+  exit 1
+fi
+
+set -e
+
+for i in binaries boring; do
+  darcs setpref ${i}file _$i
+  rm -f _darcs/prefs/$i
+done
+
+realPWD=`env - PATH=$PATH pwd`
+case "$realPWD/" in
+  $HOME/lang/clojure/*)
+    echo '(^|/).lein-' >>_boring
+    echo '(^|/).nrepl-' >>_boring
+    echo '(^|/)target($|/)' >>_boring
+    ;;
+  $HOME/lang/haskell/*)
+    echo '(^|/)dist($|/)' >>_boring
+    ;;
+  $HOME/lang/rust/*)
+    echo '(^|/)target($|/)' >>_boring
+    ;;
+esac
+
+if test -e _boring; then
+  sort -u <_boring >_boring{new}
+  mv -f _boring{new} _boring
+fi

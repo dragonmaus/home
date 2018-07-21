@@ -1,0 +1,6 @@
+#!/bin/sh
+set | less -RS
+printf '[%s]' "$0"
+printf ' [%s]' "$@"
+printf '\n'
+exit 1
